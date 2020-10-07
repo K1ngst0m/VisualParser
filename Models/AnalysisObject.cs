@@ -7,7 +7,7 @@
         public int Type = 0;
         public bool IsFilter { get; set; } = false;
 
-        public abstract bool Parse();
+        public abstract string Parse();
 
         public virtual bool Check()
         {

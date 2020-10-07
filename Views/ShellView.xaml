@@ -338,7 +338,6 @@
                                                                 Opacity=".68"
                                                                 Text="{Binding ParseAlgorithm}" />
                                                             <TextBox
-                                                                Height="80"
                                                                 MinWidth="280"
                                                                 VerticalAlignment="Stretch"
                                                                 materialDesign:HintAssist.Hint="Multiline text"

@@ -1,15 +1,26 @@
-﻿namespace OCRProj.Models
+﻿using System.IO;
+
+namespace OCRProj.Models
 {
     public class AnalysisText : AnalysisObject
     {
-        public int TextLenght { get; set; }
+        public int TextLength { get; set; }
+        public string TextContent { get; }
 
-        public override bool Parse()
+        public override string Parse()
         {
-            if(IsFilter) AnalysisMethod.Filter(this);
-            return true;
+            var result = "";
+            if(IsFilter) result = AnalysisMethod.Filter(this);
+            return result;
         }
 
         protected override bool NullAlgorithmCheck() => IsFilter;
+
+        public AnalysisText(){}
+        public AnalysisText(string filePath)
+        {
+            TextContent = File.ReadAllText(filePath);
+            TextLength = 0;
+        }
     }
 }

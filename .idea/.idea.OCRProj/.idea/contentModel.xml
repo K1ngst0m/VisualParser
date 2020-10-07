@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Rider2020.2\python_stubs\1440926789" t="IncludeRecursive" />
     <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_OCRProj.-2009322881.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\202.7660.16.plugins\python-ce\helpers\python-skeletons" t="IncludeRecursive" />
+    <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\202.7660.16.plugins\python-ce\helpers\typeshed\stdlib\2and3" t="IncludeRecursive" />
+    <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\202.7660.16.plugins\python-ce\helpers\typeshed\stdlib\3" t="IncludeRecursive" />
+    <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\202.7660.16.plugins\python-ce\helpers\typeshed\stdlib\3.7" t="IncludeRecursive" />
+    <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\202.7660.16.plugins\python-ce\helpers\typeshed\third_party\2and3" t="IncludeRecursive" />
+    <e p="C:\Users\Npchitman\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\202.7660.16.plugins\python-ce\helpers\typeshed\third_party\3" t="IncludeRecursive" />
+    <e p="C:\Users\Npchitman\AppData\Local\Programs\Python\Python38-32" t="IncludeRecursive">
+      <e p="DLLs" t="IncludeRecursive" />
+      <e p="Lib" t="IncludeRecursive">
+        <e p="site-packages" t="IncludeRecursive" />
+      </e>
+    </e>
     <e p="C:\Users\Npchitman\source\repos\OCRProj" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="App.xaml" t="Include" />
@@ -38,7 +51,16 @@
       </e>
       <e p="OCRProj.csproj" t="IncludeRecursive" />
       <e p="OCRProj.sln" t="IncludeFlat" />
-      <e p="packages" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive">
+        <e p="Tesseract.3.3.0\x64" t="Include">
+          <e p="liblept1753.dll" t="Include" />
+          <e p="libtesseract3052.dll" t="Include" />
+        </e>
+        <e p="Tesseract.3.3.0\x86" t="Include">
+          <e p="liblept1753.dll" t="Include" />
+          <e p="libtesseract3052.dll" t="Include" />
+        </e>
+      </e>
       <e p="packages.config" t="Include" />
       <e p="Properties" t="Include">
         <e p="AssemblyInfo.cs" t="Include" />
@@ -48,6 +70,23 @@
         <e p="Settings.settings" t="Include" />
       </e>
       <e p="Resources" t="Include">
+        <e p="Algorithms" t="Include">
+          <e p="clp" t="Include">
+            <e p="clean_language_project.py" t="Include" />
+            <e p="word_lists" t="Include">
+              <e p="bad_adj.utf8" t="Include" />
+              <e p="bad_obj.utf8" t="Include" />
+              <e p="dirty_words.utf8" t="Include" />
+              <e p="good_adj.utf8" t="Include" />
+              <e p="good_obj.utf8" t="Include" />
+              <e p="judge_no.utf8" t="Include" />
+              <e p="sensitive_words.utf8" t="Include" />
+              <e p="subject_bad.utf8" t="Include" />
+              <e p="subject_good.utf8" t="Include" />
+            </e>
+          </e>
+          <e p="OCR" t="Include" />
+        </e>
         <e p="Pic" t="Include">
           <e p="clothesinfo.png" t="Include" />
         </e>

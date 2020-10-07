@@ -151,10 +151,10 @@ namespace OCRProj.Models
             switch (FileType)
             {
                 case ParseFileType.Text:
-                    TextItem = new AnalysisText();
+                    TextItem = new AnalysisText(FilePath);
                     break;
                 case ParseFileType.Pic:
-                    PicItem = new AnalysisPic();
+                    PicItem = new AnalysisPic(FilePath);
                     break;
             }
         }
@@ -169,10 +169,10 @@ namespace OCRProj.Models
             switch (FileType)
             {
                 case ParseFileType.Text :
-                    TextItem.Parse();
+                    result.ResultContent = TextItem.Parse();
                     break;
                 case ParseFileType.Pic :
-                    PicItem.Parse();
+                    result.ResultContent = PicItem.Parse();
                     break;
                 case ParseFileType.UnSupport :
                     break;

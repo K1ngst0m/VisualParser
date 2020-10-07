@@ -8,6 +8,9 @@ namespace OCRProj.Views
 {
     public partial class ShellViewModel : Screen
     {
+        /// <summary>
+        /// 开始处理
+        /// </summary>
         public void ParsingContent()
         {
             ToggleParsingButton();
@@ -19,6 +22,9 @@ namespace OCRProj.Views
             });
         }
 
+        /// <summary>
+        /// 获得处理的结果
+        /// </summary>
         private void GetParsingContent()
         {
             ParseResultList.Clear();
@@ -27,10 +33,7 @@ namespace OCRProj.Views
             if (invalidFileList.Count != 0)
             {
                 var result = new StringBuilder("");
-                foreach (var invalidFile in invalidFileList)
-                {
-                    result.Append($" \n[{invalidFile}]");
-                }
+                foreach (var invalidFile in invalidFileList) result.Append($" \n\t[{invalidFile}]");
                 MessageBox.Show($"对于文件:{result}\n 算法必须选择至少一个");
                 return;
             }
@@ -42,5 +45,4 @@ namespace OCRProj.Views
             }
         }
     }
-
 }

@@ -7,7 +7,7 @@ namespace OCRProj.Models
     {
         public string FileName { get; set; }
         public string FilePath { get; set; }
-        public string ParseAlgorithm { get; set; } = "OCR光学字符识别 | 文字不良内容判断 | 敏感图片判断";
+        public string ParseAlgorithm { get; set; }
         private ParseFileType FileType { get; }
 
         public string FileIcon =>

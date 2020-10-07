@@ -6,8 +6,49 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a5a7be-fe79-4ae2-adde-812285b3416c" name="Default Changelist" comment="" />
+    <list default="true" id="b1a5a7be-fe79-4ae2-adde-812285b3416c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/clp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/bad_adj.utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/bad_obj.utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/dirty_words.utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/good_adj.utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/good_obj.utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/judge_no.utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/sensitive_words.utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/subject_bad.utf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/subject_good.utf8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AnalysisMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisMethod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AnalysisObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AnalysisPic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisPic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AnalysisResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AnalysisText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/FileContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/FileContent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OCRProj.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OCRProj.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/ShellView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/ShellView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/packages.config" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,14 +57,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/Npchitman/source/repos/OCRProj/Models/AnalysisResult.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Models/AnalysisContent.cs" />
-        <option value="$PROJECT_DIR$/Models/AnalysisMethod.cs" />
         <option value="$PROJECT_DIR$/Bootstrapper.cs" />
         <option value="$PROJECT_DIR$/Views/ShellView.xaml.cs" />
         <option value="$PROJECT_DIR$/Views/ShellView.xaml" />
@@ -34,12 +71,14 @@
         <option value="$PROJECT_DIR$/ModelViews/ListController.ItemSelect.cs" />
         <option value="$PROJECT_DIR$/ModelViews/ParsingController.Status.cs" />
         <option value="$PROJECT_DIR$/ModelViews/ParsingController.cs" />
-        <option value="$PROJECT_DIR$/Models/AnalysisPic.cs" />
-        <option value="$PROJECT_DIR$/Models/AnalysisText.cs" />
-        <option value="$PROJECT_DIR$/Models/AnalysisObject.cs" />
-        <option value="$PROJECT_DIR$/Models/AnalysisResult.cs" />
-        <option value="$PROJECT_DIR$/Models/FileContent.cs" />
         <option value="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" />
+        <option value="$PROJECT_DIR$/Models/AnalysisObject.cs" />
+        <option value="$PROJECT_DIR$/Models/FileContent.cs" />
+        <option value="$PROJECT_DIR$/Models/AnalysisText.cs" />
+        <option value="$PROJECT_DIR$/Models/AnalysisResult.cs" />
+        <option value="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" />
+        <option value="$PROJECT_DIR$/Models/AnalysisPic.cs" />
+        <option value="$PROJECT_DIR$/Models/AnalysisMethod.cs" />
       </list>
     </option>
   </component>
@@ -52,6 +91,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -84,7 +124,8 @@
       <updated>1601910542456</updated>
       <workItem from="1601910549901" duration="27153000" />
       <workItem from="1601988008439" duration="11927000" />
-      <workItem from="1602025617924" duration="4873000" />
+      <workItem from="1602025617924" duration="5435000" />
+      <workItem from="1602053443960" duration="9713000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1602036398432</created>
@@ -107,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602043718972</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-">
+      <created>1602043928696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602043928696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,11 +163,23 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="初始化" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="clp算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="clp算法" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1493" height="221" key="GridCell.Tab.0.bottom" timestamp="1601982299741">
@@ -138,10 +198,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="221" key="GridCell.Tab.0.right/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601982299741" />
-    <state x="386" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601992718661">
+    <state x="270" y="61" key="SettingsEditor" timestamp="1602054591563">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="386" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601992718661" />
+    <state x="270" y="61" key="SettingsEditor/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602054591563" />
+    <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog" timestamp="1602062645556">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602062645556" />
+    <state x="386" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602062403221">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="386" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602062403221" />
     <state x="2142" y="-144" width="494" height="967" key="dock-window-1" timestamp="1601988514309">
       <screen x="1920" y="-540" width="864" height="1506" />
     </state>
@@ -152,10 +220,10 @@
     </state>
     <state x="1920" y="-180" width="635" height="560" maximized="true" key="dock-window-2/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601976891787" />
     <state x="2023" y="91" width="635" height="560" key="dock-window-2/0.0.1536.834/1920.-540.864.1506@1920.-540.864.1506" timestamp="1601988514309" />
-    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602035326743">
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602060142018">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602035326743" />
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602060142018" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-740.864.1506@0.0.1536.834" timestamp="1601911615888" />
   </component>
 </project>
