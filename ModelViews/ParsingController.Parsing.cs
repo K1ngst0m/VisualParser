@@ -2,7 +2,6 @@
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using MaterialDesignThemes.Wpf;
 using Stylet;
 
 namespace OCRProj.Views

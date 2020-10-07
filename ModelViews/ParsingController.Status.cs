@@ -1,5 +1,4 @@
 ﻿using System;
-using OCRProj.Models;
 using Stylet;
 
 namespace OCRProj.Views

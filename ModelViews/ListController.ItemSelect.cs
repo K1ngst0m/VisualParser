@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Controls;
-using OCRProj.Models;
 using Stylet;
 
 namespace OCRProj.Views
