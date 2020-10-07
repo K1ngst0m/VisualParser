@@ -16,39 +16,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a5a7be-fe79-4ae2-adde-812285b3416c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/clp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/bad_adj.utf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/bad_obj.utf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/dirty_words.utf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/good_adj.utf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/good_obj.utf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/judge_no.utf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/sensitive_words.utf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/subject_bad.utf8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/word_lists/subject_good.utf8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/AnalysisMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisMethod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/AnalysisObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/AnalysisPic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisPic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/AnalysisResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/AnalysisText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/FileContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/FileContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OCRProj.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OCRProj.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/ShellView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/ShellView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/packages.config" afterDir="false" />
-    </list>
+    <list default="true" id="b1a5a7be-fe79-4ae2-adde-812285b3416c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +93,7 @@
       <workItem from="1601910549901" duration="27153000" />
       <workItem from="1601988008439" duration="11927000" />
       <workItem from="1602025617924" duration="5435000" />
-      <workItem from="1602053443960" duration="9713000" />
+      <workItem from="1602053443960" duration="10362000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1602036398432</created>
@@ -155,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602043928696</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ocr算法">
+      <created>1602077731986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602077731987</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +154,8 @@
     <MESSAGE value="初始化" />
     <MESSAGE value="-" />
     <MESSAGE value="clp算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="clp算法" />
+    <MESSAGE value="ocr算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="ocr算法" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1493" height="221" key="GridCell.Tab.0.bottom" timestamp="1601982299741">
@@ -220,10 +196,10 @@
     </state>
     <state x="1920" y="-180" width="635" height="560" maximized="true" key="dock-window-2/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601976891787" />
     <state x="2023" y="91" width="635" height="560" key="dock-window-2/0.0.1536.834/1920.-540.864.1506@1920.-540.864.1506" timestamp="1601988514309" />
-    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602060142018">
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602077740383">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602060142018" />
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602077740383" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-740.864.1506@0.0.1536.834" timestamp="1601911615888" />
   </component>
 </project>
