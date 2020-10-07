@@ -1,0 +1,381 @@
+﻿<Window
+    x:Class="OCRProj.Views.ShellView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:OCRProj.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:s="https://github.com/canton7/Stylet"
+    Title="色情与敏感信息辅助检测系统"
+    Width="900"
+    Height="720"
+    d:DataContext="{d:DesignInstance local:ShellViewModel}"
+    ResizeMode="CanMinimize"
+    TextElement.FontWeight="Regular"
+    TextOptions.TextFormattingMode="Ideal"
+    TextOptions.TextRenderingMode="Auto"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <Style TargetType="materialDesign:Card">
+            <Setter Property="Margin" Value="15" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <DockPanel>
+                <materialDesign:ColorZone
+                    Margin="10,10,10,0"
+                    Padding="16"
+                    CornerRadius="10"
+                    DockPanel.Dock="Top"
+                    Mode="PrimaryMid">
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                        <materialDesign:PackIcon
+                            Width="45"
+                            Height="45"
+                            VerticalAlignment="Center"
+                            Kind="Pinwheel" />
+                        <TextBlock
+                            Margin="16,0,0,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Style="{DynamicResource MaterialDesignHeadline5TextBlock}">
+                            色情与敏感信息辅助检测系统
+                        </TextBlock>
+                    </StackPanel>
+                </materialDesign:ColorZone>
+                <DockPanel Margin="0,20,0,0" DockPanel.Dock="Top">
+                    <StackPanel DockPanel.Dock="Left">
+                        <GroupBox
+                            Width="380"
+                            Height="350"
+                            FontSize="14"
+                            Header="输入目录"
+                            Style="{DynamicResource MaterialDesignCardGroupBox}">
+                            <GroupBox.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                            Width="25"
+                                            Height="25"
+                                            VerticalAlignment="Center"
+                                            Kind="FileTableBoxOutline" />
+                                        <TextBlock
+                                            Margin="8,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                                            Text="{Binding}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GroupBox.HeaderTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <!--  输入目录  -->
+                                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                    <ItemsControl Grid.IsSharedSizeScope="True" ItemsSource="{Binding ParseFileList, UpdateSourceTrigger=PropertyChanged}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border
+                                                    x:Name="Border"
+                                                    Padding="3"
+                                                    BorderBrush="{DynamicResource MaterialDesignDarkBackground}"
+                                                    BorderThickness="0,0,0,1">
+                                                    <StackPanel Grid.Column="0">
+                                                        <StackPanel.Resources>
+                                                            <Style BasedOn="{StaticResource MaterialDesignFlatPrimaryToggleButton}" TargetType="ToggleButton">
+                                                                <Setter Property="Margin" Value="10,0,0,0" />
+                                                            </Style>
+                                                        </StackPanel.Resources>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Border
+                                                                BorderBrush="{Binding BorderColor, UpdateSourceTrigger=PropertyChanged}"
+                                                                BorderThickness="3"
+                                                                CornerRadius="5">
+                                                                <ListBoxItem PreviewMouseDown="{s:Action SelectionUpdate}" Tag="{Binding Index}">
+                                                                    <StackPanel
+                                                                        Width="140"
+                                                                        VerticalAlignment="Center"
+                                                                        Orientation="Horizontal">
+                                                                        <materialDesign:PackIcon
+                                                                            Width="22"
+                                                                            Height="22"
+                                                                            Kind="{Binding FileIcon}" />
+                                                                        <TextBlock
+                                                                            Margin="5,2,10,0"
+                                                                            FontSize="13"
+                                                                            FontWeight="Bold"
+                                                                            Text="{Binding FileName}"
+                                                                            ToolTip="{Binding FileName}" />
+                                                                    </StackPanel>
+                                                                </ListBoxItem>
+                                                            </Border>
+                                                            <ToggleButton
+                                                                VerticalAlignment="Center"
+                                                                IsChecked="{Binding IsFilter, UpdateSourceTrigger=PropertyChanged}"
+                                                                IsEnabled="{Binding IsEnableFilter, UpdateSourceTrigger=PropertyChanged}"
+                                                                ToolTip="文字不良内容识别">
+                                                                <materialDesign:PackIcon
+                                                                    Width="30"
+                                                                    Height="30"
+                                                                    Kind="AlphaF" />
+                                                            </ToggleButton>
+                                                            <ToggleButton
+                                                                VerticalAlignment="Center"
+                                                                IsChecked="{Binding IsOcr, UpdateSourceTrigger=PropertyChanged}"
+                                                                IsEnabled="{Binding IsEnableOcr, UpdateSourceTrigger=PropertyChanged}"
+                                                                ToolTip="OCR文字识别">
+                                                                <materialDesign:PackIcon
+                                                                    Width="30"
+                                                                    Height="30"
+                                                                    Kind="AlphaO" />
+                                                            </ToggleButton>
+                                                            <ToggleButton
+                                                                VerticalAlignment="Center"
+                                                                IsChecked="{Binding IsJudge, UpdateSourceTrigger=PropertyChanged}"
+                                                                IsEnabled="{Binding IsEnableJudge, UpdateSourceTrigger=PropertyChanged}"
+                                                                ToolTip="敏感内容判断">
+                                                                <materialDesign:PackIcon
+                                                                    Width="30"
+                                                                    Height="30"
+                                                                    Kind="AlphaJ" />
+                                                            </ToggleButton>
+                                                        </StackPanel>
+                                                        <TextBlock FontSize="9" Text="{Binding FilePath}" />
+                                                    </StackPanel>
+                                                </Border>
+                                                <DataTemplate.Triggers>
+                                                    <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                                                        <Setter TargetName="Border" Property="Background" Value="{DynamicResource MaterialDesignSelection}" />
+                                                    </DataTrigger>
+                                                </DataTemplate.Triggers>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </ScrollViewer>
+                                <materialDesign:ColorZone
+                                    Grid.Row="1"
+                                    Effect="{DynamicResource MaterialDesignShadowDepth5}"
+                                    Mode="PrimaryMid">
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                            Width="20"
+                                            Height="20"
+                                            Margin="8,7,0,0"
+                                            Kind="AboutCircleOutline" />
+                                        <TextBlock Margin="5,7,10,10" Text="添加需要检测的内容" />
+                                    </StackPanel>
+                                </materialDesign:ColorZone>
+                                <Button
+                                    Grid.Row="0"
+                                    Margin="0,0,68,-20"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Bottom"
+                                    Command="{s:Action AddContent}"
+                                    Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                                    <materialDesign:PackIcon
+                                        Width="22"
+                                        Height="22"
+                                        Kind="Plus" />
+                                </Button>
+                                <Button
+                                    Grid.Row="0"
+                                    Margin="0,0,10,-20"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Bottom"
+                                    Command="{s:Action DeleteContent}"
+                                    Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                                    <materialDesign:PackIcon
+                                        Width="22"
+                                        Height="22"
+                                        Kind="Minus" />
+                                </Button>
+                            </Grid>
+                        </GroupBox>
+                    </StackPanel>
+                    <StackPanel>
+                        <GroupBox
+                            Height="350"
+                            FontSize="14"
+                            Header="内容信息"
+                            Style="{DynamicResource MaterialDesignCardGroupBox}">
+                            <GroupBox.HeaderTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                            Width="25"
+                                            Height="25"
+                                            VerticalAlignment="Center"
+                                            Kind="ImageArea" />
+                                        <TextBlock
+                                            Margin="8,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                                            Text="{Binding}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GroupBox.HeaderTemplate>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="{Binding CurSelectedFileContent.FileIcon}" />
+                                    <TextBlock
+                                        Margin="10,0"
+                                        FontWeight="Bold"
+                                        Opacity=".55"
+                                        Style="{DynamicResource MaterialDesignTextBlock}"
+                                        Text="{Binding CurSelectedFileContent.FileName}" />
+                                </StackPanel>
+                                <DockPanel>
+                                    <materialDesign:Card
+                                        Width="230"
+                                        MaxHeight="210"
+                                        Margin="10,10,20,30"
+                                        DockPanel.Dock="Left">
+                                        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                                            <Grid>
+                                                <Image
+                                                    SnapsToDevicePixels="True"
+                                                    Source="{Binding CurSelectedFileContent.ShowContent, UpdateSourceTrigger=PropertyChanged}"
+                                                    Visibility="{Binding CurSelectedFileContent.IsShowPic, UpdateSourceTrigger=PropertyChanged}" />
+                                                <TextBlock
+                                                    Width="180"
+                                                    Margin="10"
+                                                    Text="{Binding CurSelectedFileContent.ShowContent, UpdateSourceTrigger=PropertyChanged}"
+                                                    TextWrapping="WrapWithOverflow"
+                                                    Visibility="{Binding CurSelectedFileContent.IsShowText, UpdateSourceTrigger=PropertyChanged}" />
+                                            </Grid>
+                                        </ScrollViewer>
+                                    </materialDesign:Card>
+                                    <StackPanel Margin="0,20,0,30" Orientation="Horizontal">
+                                        <ListView>
+                                            <ListViewItem
+                                                Content="类型:"
+                                                FontFamily="Microsoft YaHei"
+                                                FontWeight="Bold" />
+                                            <ListViewItem
+                                                Content="大小:"
+                                                FontFamily="Microsoft YaHei"
+                                                FontWeight="Bold" />
+                                            <ListViewItem
+                                                Content="创建日期:"
+                                                FontFamily="Microsoft YaHei"
+                                                FontWeight="Bold" />
+                                            <ListViewItem
+                                                Content="修改日期:"
+                                                FontFamily="Microsoft YaHei"
+                                                FontWeight="Bold" />
+                                            <ListViewItem
+                                                Content="文件信息:"
+                                                FontFamily="Microsoft YaHei"
+                                                FontWeight="Bold" />
+                                        </ListView>
+                                        <ListView>
+                                            <ListViewItem Content="{Binding CurSelectedFileContent.FileTypeShow, UpdateSourceTrigger=PropertyChanged}" FontFamily="Microsoft YaHei" />
+                                            <ListViewItem Content="{Binding CurSelectedFileContent.FileSize, UpdateSourceTrigger=PropertyChanged}" FontFamily="Microsoft YaHei" />
+                                            <ListViewItem Content="{Binding CurSelectedFileContent.FileFirstDate, UpdateSourceTrigger=PropertyChanged}" FontFamily="Microsoft YaHei" />
+                                            <ListViewItem Content="{Binding CurSelectedFileContent.FileLastDate, UpdateSourceTrigger=PropertyChanged}" FontFamily="Microsoft YaHei" />
+                                            <ListViewItem Content="{Binding CurSelectedFileContent.FileInfo, UpdateSourceTrigger=PropertyChanged}" FontFamily="Microsoft YaHei" />
+                                        </ListView>
+                                    </StackPanel>
+                                </DockPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <StackPanel VerticalAlignment="Center">
+                        <Button
+                            Margin="20"
+                            materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                            materialDesign:ButtonProgressAssist.IsIndicatorVisible="{Binding IsParsing, UpdateSourceTrigger=PropertyChanged}"
+                            materialDesign:ButtonProgressAssist.Value="-1"
+                            Command="{s:Action ParsingContent}"
+                            Content="{Binding ParsingButtonStatus, UpdateSourceTrigger=PropertyChanged}"
+                            Style="{StaticResource MaterialDesignRaisedButton}" />
+                    </StackPanel>
+                </StackPanel>
+                <DockPanel>
+                    <StackPanel DockPanel.Dock="Bottom">
+                        <materialDesign:Card Background="{DynamicResource MaterialDesignBackground}">
+                            <Expander
+                                HorizontalAlignment="Stretch"
+                                Header="处理结果"
+                                IsExpanded="True">
+                                <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical"
+                                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}">
+                                    <StackPanel>
+                                        <ItemsControl ItemsSource="{Binding ParseResultList, UpdateSourceTrigger=PropertyChanged}">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Expander HorizontalAlignment="Stretch">
+                                                        <Expander.Header>
+                                                            <StackPanel Orientation="Horizontal">
+                                                                <materialDesign:PackIcon
+                                                                    Width="22"
+                                                                    Height="22"
+                                                                    Margin="0,2,10,0"
+                                                                    VerticalAlignment="Center"
+                                                                    Kind="{Binding FileIcon}" />
+                                                                <Label Content="{Binding FileName}" FontSize="17" />
+                                                            </StackPanel>
+                                                        </Expander.Header>
+                                                        <StackPanel
+                                                            Margin="24,8,24,16"
+                                                            Orientation="Vertical"
+                                                            TextBlock.Foreground="{DynamicResource MaterialDesignBody}">
+                                                            <TextBlock
+                                                                Margin="0,0,0,10"
+                                                                Opacity=".68"
+                                                                Text="{Binding FilePath}" />
+                                                            <TextBlock
+                                                                Margin="0,0,0,10"
+                                                                Opacity=".68"
+                                                                Text="{Binding ParseAlgorithm}" />
+                                                            <TextBox
+                                                                Height="80"
+                                                                MinWidth="280"
+                                                                VerticalAlignment="Stretch"
+                                                                materialDesign:HintAssist.Hint="Multiline text"
+                                                                AcceptsReturn="True"
+                                                                SpellCheck.IsEnabled="True"
+                                                                Text="{Binding ResultContent}"
+                                                                TextWrapping="Wrap"
+                                                                VerticalScrollBarVisibility="Auto" />
+                                                        </StackPanel>
+                                                    </Expander>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                        <Border
+                                            Height="1"
+                                            HorizontalAlignment="Stretch"
+                                            Background="{DynamicResource MaterialDesignDivider}"
+                                            SnapsToDevicePixels="True" />
+                                        <Border
+                                            Height="1"
+                                            HorizontalAlignment="Stretch"
+                                            Background="{DynamicResource MaterialDesignDivider}"
+                                            SnapsToDevicePixels="True" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </Expander>
+                        </materialDesign:Card>
+                    </StackPanel>
+                </DockPanel>
+            </DockPanel>
+        </ScrollViewer>
+
+        <materialDesign:Snackbar HorizontalAlignment="Stretch" IsActive="{Binding IsActiveSnackBar, UpdateSourceTrigger=PropertyChanged}">
+            <materialDesign:SnackbarMessage
+                ActionClick="{s:Action HideSnackBar}"
+                ActionContent="OK"
+                Content="{Binding ParsingResultMessage, UpdateSourceTrigger=PropertyChanged}" />
+        </materialDesign:Snackbar>
+    </Grid>
+</Window>
