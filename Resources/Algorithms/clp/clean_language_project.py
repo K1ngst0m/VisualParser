@@ -16,9 +16,14 @@ import sys
 import re
 
 
+def convert_path(path: str) -> str:
+    return path.replace(r'\/'.replace(os.sep, ''), os.sep)
+
 def read_func(str_file_path):
+    application_path = os.path.dirname(os.path.realpath(sys.executable))
     temp_words_list = []
-    with open(str_file_path, 'r', encoding="utf8") as file:
+    str_file_path = application_path + "/word_lists/" + str_file_path
+    with open(convert_path(str_file_path), 'r', encoding="utf8") as file:
         for line in file.readlines():
             liner = line.strip()
             temp_words_list.append(liner)
@@ -28,15 +33,15 @@ def read_func(str_file_path):
 class clean_language:
     def __init__(self):
         # 这两个库是出现直接ban的
-        self.__sensitive_words_list = read_func('word_lists//sensitive_words.utf8')
-        self.__dirty_list = read_func('word_lists//dirty_words.utf8')
+        self.__sensitive_words_list = read_func('sensitive_words.utf8')
+        self.__dirty_list = read_func('dirty_words.utf8')
 
         # 需要判断的库
-        self.__subject_good_list = read_func('word_lists//subject_good.utf8')
-        self.__subject_bad_list = read_func('word_lists//subject_bad.utf8')
-        self.__good_adj_list = read_func('word_lists//good_adj.utf8')
-        self.__bad_adj_list = read_func('word_lists//bad_adj.utf8')
-        self.__judge_no_list = read_func('word_lists//judge_no.utf8')
+        self.__subject_good_list = read_func('subject_good.utf8')
+        self.__subject_bad_list = read_func('subject_bad.utf8')
+        self.__good_adj_list = read_func('good_adj.utf8')
+        self.__bad_adj_list = read_func('bad_adj.utf8')
+        self.__judge_no_list = read_func('judge_no.utf8')
 
     # def main_controler_list_input(self,list_input):
 
@@ -56,7 +61,6 @@ class clean_language:
                     temp_word = self.__sensitive_words_list[i]
                     if test_input.find(temp_word) > 0:
                         print("检索路径: adult_words_list")
-                        # print(temp_word)
                         word_flag = 1
                         break
 
@@ -65,7 +69,6 @@ class clean_language:
                     temp_word = self.__dirty_list[i]
                     if test_input.find(temp_word) > 0:
                         print("检索路径: dirty_list")
-                        # print(temp_word)
                         word_flag = 1
                         break
 
@@ -201,7 +204,6 @@ class clean_language:
 
 
 if __name__ == '__main__':
-    os.chdir(os.path.split(os.path.realpath(__file__))[0])
     cleaner = clean_language()
     sys.argv.remove(sys.argv[0])
     for arg in sys.argv:

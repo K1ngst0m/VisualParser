@@ -16,7 +16,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a5a7be-fe79-4ae2-adde-812285b3416c" name="Default Changelist" comment="" />
+    <list default="true" id="b1a5a7be-fe79-4ae2-adde-812285b3416c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AnalysisMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisMethod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OCRProj.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OCRProj.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/ShellView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/ShellView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axulq-2tshj-003.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Icon.ico" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,14 +48,14 @@
         <option value="$PROJECT_DIR$/ModelViews/ListController.ItemSelect.cs" />
         <option value="$PROJECT_DIR$/ModelViews/ParsingController.Status.cs" />
         <option value="$PROJECT_DIR$/ModelViews/ParsingController.cs" />
-        <option value="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" />
         <option value="$PROJECT_DIR$/Models/AnalysisObject.cs" />
         <option value="$PROJECT_DIR$/Models/FileContent.cs" />
         <option value="$PROJECT_DIR$/Models/AnalysisText.cs" />
         <option value="$PROJECT_DIR$/Models/AnalysisResult.cs" />
-        <option value="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" />
         <option value="$PROJECT_DIR$/Models/AnalysisPic.cs" />
+        <option value="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" />
         <option value="$PROJECT_DIR$/Models/AnalysisMethod.cs" />
+        <option value="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" />
       </list>
     </option>
   </component>
@@ -57,12 +66,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.clean_language_project">
     <configuration name="OCRProj" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -81,6 +92,32 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="clean_language_project" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="riderModule" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Resources/Algorithms/clp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.clean_language_project" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -93,7 +130,7 @@
       <workItem from="1601910549901" duration="27153000" />
       <workItem from="1601988008439" duration="11927000" />
       <workItem from="1602025617924" duration="5435000" />
-      <workItem from="1602053443960" duration="10362000" />
+      <workItem from="1602053443960" duration="19478000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1602036398432</created>
@@ -130,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602077731987</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-">
+      <created>1602078798827</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602078798827</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,40 +196,48 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="初始化" />
-    <MESSAGE value="-" />
     <MESSAGE value="clp算法" />
     <MESSAGE value="ocr算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="ocr算法" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="221" key="GridCell.Tab.0.bottom" timestamp="1601982299741">
+    <state width="806" height="221" key="GridCell.Tab.0.bottom" timestamp="1602139215584">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601982299741" />
-    <state width="1493" height="221" key="GridCell.Tab.0.center" timestamp="1601982299740">
+    <state width="806" height="221" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602139215584" />
+    <state width="806" height="221" key="GridCell.Tab.0.center" timestamp="1602139215584">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.center/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601982299740" />
-    <state width="1493" height="221" key="GridCell.Tab.0.left" timestamp="1601982299739">
+    <state width="806" height="221" key="GridCell.Tab.0.center/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602139215584" />
+    <state width="806" height="221" key="GridCell.Tab.0.left" timestamp="1602139215584">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.left/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601982299739" />
-    <state width="1493" height="221" key="GridCell.Tab.0.right" timestamp="1601982299741">
+    <state width="806" height="221" key="GridCell.Tab.0.left/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602139215584" />
+    <state width="806" height="221" key="GridCell.Tab.0.right" timestamp="1602139215584">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="221" key="GridCell.Tab.0.right/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601982299741" />
-    <state x="270" y="61" key="SettingsEditor" timestamp="1602054591563">
+    <state width="806" height="221" key="GridCell.Tab.0.right/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602139215584" />
+    <state x="650" y="145" key="Rider.ProjectTemplateDialog.Size" timestamp="1602079646632">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="61" key="SettingsEditor/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602054591563" />
+    <state x="650" y="145" key="Rider.ProjectTemplateDialog.Size/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602079646632" />
+    <state x="270" y="61" key="SettingsEditor" timestamp="1602080424255">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="61" key="SettingsEditor/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602080424255" />
     <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog" timestamp="1602062645556">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602062645556" />
-    <state x="386" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602062403221">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1602078899603">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="386" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602062403221" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602078899603" />
+    <state x="386" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602121911659">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="386" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602121911659" />
     <state x="2142" y="-144" width="494" height="967" key="dock-window-1" timestamp="1601988514309">
       <screen x="1920" y="-540" width="864" height="1506" />
     </state>
@@ -196,10 +248,10 @@
     </state>
     <state x="1920" y="-180" width="635" height="560" maximized="true" key="dock-window-2/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1601976891787" />
     <state x="2023" y="91" width="635" height="560" key="dock-window-2/0.0.1536.834/1920.-540.864.1506@1920.-540.864.1506" timestamp="1601988514309" />
-    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602077740383">
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1602122076982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602077740383" />
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-540.864.1506@0.0.1536.834" timestamp="1602122076982" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.-740.864.1506@0.0.1536.834" timestamp="1601911615888" />
   </component>
 </project>

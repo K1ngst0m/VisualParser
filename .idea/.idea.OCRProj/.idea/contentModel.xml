@@ -20,9 +20,9 @@
       <e p="App.config" t="Include" />
       <e p="App.xaml" t="Include" />
       <e p="App.xaml.cs" t="Include" />
-      <e p="axulq-2tshj-003.ico" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Bootstrapper.cs" t="Include" />
+      <e p="Icon.ico" t="Include" />
       <e p="Models" t="Include">
         <e p="AnalysisMethod.cs" t="Include" />
         <e p="AnalysisObject.cs" t="Include" />
@@ -72,6 +72,7 @@
       <e p="Resources" t="Include">
         <e p="Algorithms" t="Include">
           <e p="clp" t="Include">
+            <e p="clean_language_project.exe" t="Include" />
             <e p="clean_language_project.py" t="Include" />
             <e p="word_lists" t="Include">
               <e p="bad_adj.utf8" t="Include" />

@@ -24,10 +24,10 @@ namespace OCRProj.Models
         /// <param name="parseItem">文字对象</param>
         public static string Filter(AnalysisText parseItem)
         {
-            const string pythonExec = "python ";
-            const string clpPath = "./Resources/Algorithms/clp/clean_language_project.py";
+            var workDir = System.IO.Directory.GetCurrentDirectory();
+            const string clpPath = "/Resources/Algorithms/clp/clean_language_project.exe";
             var clpContent = $" '{parseItem.TextContent}'";
-            var command = new StringBuilder(pythonExec).Append(clpPath).Append(clpContent);
+            var command = new StringBuilder(workDir).Append(clpPath).Append(clpContent);
             var result = ExecuteCmd(command.ToString());
             result = result
                 .Substring(result.IndexOf("#A#", StringComparison.Ordinal))

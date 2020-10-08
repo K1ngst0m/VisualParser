@@ -14,12 +14,12 @@ namespace OCRProj.Views
         public void ParsingContent()
         {
             ToggleParsingButton();
-            Task.Delay(2000).ContinueWith(_ =>
+            Task.Delay(0100).ContinueWith(_ =>
             {
                 GetParsingContent();
                 ToggleParsingButton();
-                ToggleSnackBar(ParsingResult.Success);
             });
+            ToggleSnackBar(ParsingResult.Success);
         }
 
         /// <summary>

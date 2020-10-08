@@ -39,7 +39,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>axulq-2tshj-003.ico</ApplicationIcon>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialDesignColors, Version=1.2.7.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
@@ -152,10 +152,11 @@
     <Folder Include="Resources\Algorithms\OCR\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="axulq-2tshj-003.ico" />
-    <Content Include="Resources\Algorithms\clp\clean_language_project.py">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Resource Include="Icon.ico" />
+    <Content Include="Resources\Algorithms\clp\clean_language_project.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\Algorithms\clp\clean_language_project.py" />
     <Content Include="Resources\Algorithms\clp\word_lists\bad_adj.utf8">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
