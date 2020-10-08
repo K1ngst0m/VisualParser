@@ -16,16 +16,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1a5a7be-fe79-4ae2-adde-812285b3416c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProj/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ModelViews/ParsingController.Parsing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/AnalysisMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AnalysisMethod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OCRProj.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/OCRProj.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Algorithms/clp/clean_language_project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/ShellView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/ShellView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axulq-2tshj-003.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Icon.ico" afterDir="false" />
-    </list>
+    <list default="true" id="b1a5a7be-fe79-4ae2-adde-812285b3416c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,6 +122,7 @@
       <workItem from="1601988008439" duration="11927000" />
       <workItem from="1602025617924" duration="5435000" />
       <workItem from="1602053443960" duration="19478000" />
+      <workItem from="1602197177231" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1602036398432</created>
@@ -192,6 +184,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

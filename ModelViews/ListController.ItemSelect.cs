@@ -5,7 +5,7 @@ using Stylet;
 
 namespace OCRProj.Views
 {
-    public partial class ShellViewModel: Screen
+    public partial class ShellViewModel : Screen
     {
         /// <summary>
         ///  选择内容更改

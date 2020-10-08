@@ -51,6 +51,7 @@
       </e>
       <e p="OCRProj.csproj" t="IncludeRecursive" />
       <e p="OCRProj.sln" t="IncludeFlat" />
+      <e p="OCRProj_TemporaryKey.pfx" t="Include" />
       <e p="packages" t="ExcludeRecursive">
         <e p="Tesseract.3.3.0\x64" t="Include">
           <e p="liblept1753.dll" t="Include" />
@@ -88,9 +89,7 @@
           </e>
           <e p="OCR" t="Include" />
         </e>
-        <e p="Pic" t="Include">
-          <e p="clothesinfo.png" t="Include" />
-        </e>
+        <e p="Examples" t="Include" />
       </e>
       <e p="Views" t="Include">
         <e p="ShellView.xaml" t="Include" />

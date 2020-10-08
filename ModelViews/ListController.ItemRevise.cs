@@ -7,10 +7,10 @@ using Stylet;
 
 namespace OCRProj.Views
 {
-    public partial class ShellViewModel: Screen
+    public partial class ShellViewModel : Screen
     {
-        
-        
+
+
         /// <summary>
         /// 添加内容
         /// </summary>
@@ -30,8 +30,8 @@ namespace OCRProj.Views
                 if (IsRedundancy(fileName)) continue;
                 ParseFileList.Add(new FileContent(fileName, ParseFileList.Count));
             }
-            IsSelectedChanged();
             SetDefaultIndex();
+            IsSelectedChanged();
         }
 
         /// <summary>
@@ -56,13 +56,15 @@ namespace OCRProj.Views
             }
             SetDefaultIndex();
         }
-        
+
         // 设置默认节点, 用于节点删除
-        private void SetDefaultIndex() 
-            => CurSelectedIndex = ParseFileList.Count - 1;
-        
+        private void SetDefaultIndex()
+        {
+            CurSelectedIndex = ParseFileList.Count - 1;
+        }
+
         // 判断是否有添加过的文件, 用于节点添加
-        private bool IsRedundancy(string filePath) 
+        private bool IsRedundancy(string filePath)
             => ParseFileList.Any(fileItem => NormalizePath(fileItem.FilePath) == NormalizePath(filePath));
 
         // 标准化文件路径

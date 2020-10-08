@@ -12,7 +12,7 @@ namespace OCRProj.Models
         /// <param name="parseItem">图片对象</param>
         public static string Ocr(AnalysisPic parseItem)
         {
-            using var engine = new TesseractEngine("tessdata", "chi_sim", EngineMode.Default);
+            using var engine = new TesseractEngine("Resources/Algorithms/ocr/tessdata", "chi_sim", EngineMode.Default);
             using var img = Pix.LoadFromFile(parseItem.FilePath);
             using var page = engine.Process(img);
             return page.GetText();
