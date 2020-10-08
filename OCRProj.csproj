@@ -184,7 +184,7 @@
     <Content Include="Resources\Algorithms\clp\word_lists\subject_good.utf8">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Pic\clothesinfo.png">
+    <Content Include="Resources\Examples\clothesinfo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
