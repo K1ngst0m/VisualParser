@@ -11,15 +11,15 @@ namespace OCRProj.Views
         /// <summary>
         /// 开始处理
         /// </summary>
-        public void ParsingContent()
+        public async Task ParsingContent()
         {
             ToggleParsingButton();
-            Task.Delay(0100).ContinueWith(_ =>
-            {
-                GetParsingContent();
-                ToggleParsingButton();
-            });
-            ToggleSnackBar(ParsingResult.Success);
+            await Task.Delay(0100).ContinueWith(_ =>
+             {
+                 GetParsingContent();
+                 ToggleParsingButton();
+                 ToggleSnackBar(ParsingResult.Success);
+             });
         }
 
         /// <summary>
